@@ -1,0 +1,292 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+header {
+  background-color: #274F4E;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+header > div {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+}
+
+#home {
+  height: 600px;
+  background-image: url('./images/drum2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  
+}
+
+#home div h1 {
+  font-size: 3rem;
+  color: #6FFFE9;
+  margin: 30px;
+  
+
+}
+
+#home div h3 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin: 30px;
+}
+
+#home div p {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin: 30px;
+  color: #5BC0BE;
+}
+
+#home div h3 {
+  color: white;
+  margin: 30px;
+}
+
+#home button {
+  border: 0;
+  background-color: white;
+  color: #2F4858;
+  border-radius: 50px;
+  padding: 15px 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3s;
+  margin: 30px;
+}
+
+#home button:hover {
+  background-color: #5BC0BE2D;
+  color: white;
+}
+
+#home img {
+  width: 700px;
+}
+
+#about {
+  height: 600px;
+}
+
+#about h1 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+#about > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.about-container {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-picture {
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-text {
+  width: 400px;
+}
+
+#about p {
+  line-height: 1.5rem;
+}
+
+#projects {
+  background-color: #5BC0BE;
+  height: 700px;
+  padding: .1px;
+}
+
+#projects h1 {
+  text-align: center;
+  color: white;
+  font-size: 1.8rem;
+}
+
+#projects > div {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.project p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  transition: .3s;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: .3s;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.project:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+#projects img {
+  height: 200px;
+  display: block;
+}
+
+#contact {
+  background-color: #5BD8C5;
+  height: 500px;
+  padding: .1px;
+  color: white;
+}
+
+#contact h1 {
+  text-align: center;
+}
+
+#contact > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+#contact > div > div h3 {
+  text-align: center
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea, button {
+  padding: .5rem 1rem;
+  border: 0;
+  border-radius: 5px;
+  margin: .3rem;
+}
+
+#contact button {
+  background-color: #F26419;
+  color: white;
+  padding: .7rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #274F4E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+footer > div {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer > div > div a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin: .5rem;
+}
+
+footer > div > div > div {
+  margin-top: 1rem;
+  display: flex;
+}
+
+footer p {
+  color: white;
+  font-size: .8rem;
+}
+
+<style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
